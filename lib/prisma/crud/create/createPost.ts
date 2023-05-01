@@ -1,6 +1,10 @@
-import { prisma } from "lib/prisma/connect";
+import { prisma } from "../../connect";
 
-export const createPost = async (content: string, userId: string) => {
+export const createPost = async (
+  content: string,
+  userId: string,
+  medicalSearchTermId: string
+) => {
   //Create a post for the user
   const post = await prisma.post.create({
     data: {
@@ -8,6 +12,11 @@ export const createPost = async (content: string, userId: string) => {
       user: {
         connect: {
           id: userId,
+        },
+      },
+      MedicalSearchTerm: {
+        connect: {
+          id: medicalSearchTermId,
         },
       },
     },

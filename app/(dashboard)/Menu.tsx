@@ -24,15 +24,15 @@ export default function Menu() {
         <li>
           <Link
             href={{
-              pathname: "/dashboard/timeline",
+              pathname: "/dashboard/forums",
             }}
             className={`${
-              pathname == "/dashboard/timeline"
+              pathname == "/dashboard/forums"
                 ? "text-primary"
                 : "text-slate-700"
             } text-md transition-all delay-25 ease-in-out hover:text-primary`}
           >
-            Timeline
+            Forums
           </Link>
         </li>
         <li>

@@ -1,13 +1,13 @@
-import { prisma } from "lib/prisma/connect";
+import { prisma } from "../../connect";
 
 export const getAllPostsWithReplyCounts = async (
   /** Channel - the current discussion title */
-  channel: string
+  medicalSearchTermId: string
 ) => {
   /** returns all posts and their amount of replies in a _count property */
   const posts = await prisma.post.findMany({
     where: {
-      channel,
+      medicalSearchTermId,
     },
     select: {
       id: true,

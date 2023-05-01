@@ -8,7 +8,6 @@ export default function SearchResults({
     term: string;
   }[];
 }) {
-  console.log(searchResults);
   return (
     <div className="shadow-md bg-white py-2 px-3 absolute container top-11 left-0">
       {searchResults &&

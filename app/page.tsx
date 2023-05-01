@@ -20,7 +20,7 @@ export default async function Home() {
   const session = await getServerSession(authOptions);
 
   return (
-    <main className="h-[calc(100vh)] bg-gradient-to-b from-[#ece4de] container mx-auto to-[#e4ddd5] flex items-center">
+    <main className="h-[calc(100vh)] bg-gradient-to-b from-[#ece4de] container max-w-5xl mx-auto to-[#e4ddd5] flex items-center">
       <div className="grid grid-cols-2 items-center">
         <div>
           <h1 className={`${roboto.className} text-6xl text-[#2aa272]`}>

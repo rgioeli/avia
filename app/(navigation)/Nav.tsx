@@ -14,7 +14,7 @@ export default function Nav() {
 
   return (
     <div className="bg-[#2aa272] h-[60px] w-full flex items-center">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container max-w-5xl mx-auto flex justify-between items-center">
         <h1 className={`${lobster_two.className} text-3xl text-white`}>Avia</h1>
         <UserControls id={session?.id} user={session?.user} />
       </div>

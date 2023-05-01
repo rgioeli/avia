@@ -16,7 +16,7 @@ export default function ClickSearchTerm({
 
   return (
     <Link
-      href={`/dashboard/timeline/channel/${searchResult.id}`}
+      href={`/dashboard/forums/form?id=${searchResult.id}`}
       className="hover:text-primary"
       onClick={setResultsToNone}
     >
